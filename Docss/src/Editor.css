@@ -55,4 +55,36 @@ body{
     .container .ql-toolbar.ql-snow{
         display: none;
     }
+    .download .btn{
+        display: none;
+    }
+}
+
+.download{
+    position: fixed;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: rgb(242, 242, 244);
+    padding: 0.5rem 0.5rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    top: 9%;
+    color: white;
+    width: 15rem;
+
+
+    flex-direction: column;
+    min-height: 5rem;
+}
+.btn{
+    padding: .5rem 1rem;
+    width: 14rem;
+    margin-top: .3rem;
+    background-color: rgb(167, 167, 249);
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: .3rem;
+    border-color: #F3F3F3;
+    color: white;
 }

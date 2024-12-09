@@ -3,8 +3,9 @@ import Quill from 'quill';
 import "quill/dist/quill.snow.css";
 import "./Editor.css"
 import { io } from "socket.io-client";
-import { useParams } from 'react-router-dom';
+import { Outlet, useParams } from 'react-router-dom';
 import { saveAs } from 'file-saver';
+import Navbar from '../Components/Navbar';
 
 
 const SAVE_INTERVAL_MS = 2000;
@@ -129,6 +130,8 @@ const TextEditor = () => {
 
     return (
         <>
+        <Navbar/>
+        <Outlet/>
             <div className="container" ref={wrapperRef}></div>
             <div className='download'>
                 <button className='btn' onClick={handleDownload} >Save</button>
